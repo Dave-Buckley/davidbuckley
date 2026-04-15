@@ -76,13 +76,6 @@ export default async function HomePage() {
           <span>About</span>
           <span>→</span>
         </Link>
-        <a
-          href="/cv.pdf"
-          className="flex justify-between py-2 hover:text-neutral-500 transition-colors border-b border-neutral-100"
-        >
-          <span>CV (PDF)</span>
-          <span>↓</span>
-        </a>
       </nav>
 
       <p className="text-sm text-neutral-600">

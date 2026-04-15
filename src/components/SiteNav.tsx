@@ -20,9 +20,6 @@ export function SiteNav() {
           <Link href="/about" className="hover:text-neutral-900 transition-colors">
             About
           </Link>
-          <a href="/cv.pdf" className="hover:text-neutral-900 transition-colors">
-            CV
-          </a>
         </nav>
       </div>
     </header>
