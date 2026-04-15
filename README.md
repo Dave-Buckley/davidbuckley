@@ -1,4 +1,4 @@
-# davidbuckley
+# David Buckley
 
 The portfolio at **[davidbuckley.vercel.app](https://davidbuckley.vercel.app)**.
 

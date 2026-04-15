@@ -8,11 +8,11 @@ const sans = Inter({ subsets: ['latin'], variable: '--font-sans', display: 'swap
 const serif = Fraunces({ subsets: ['latin'], variable: '--font-serif', display: 'swap' })
 
 export const metadata: Metadata = {
-  title: 'davidbuckley — Junior software engineer, UK',
+  title: 'David Buckley — Junior software engineer, UK',
   description:
     '18-month self-taught pivot into software / AI engineering, documented in public. Zero cost, all free resources.',
   openGraph: {
-    title: 'davidbuckley — Junior software engineer, UK',
+    title: 'David Buckley — Junior software engineer, UK',
     description: '18-month pivot, shipping in public.',
     type: 'website',
   },

@@ -1,5 +1,5 @@
 ---
-title: "davidbuckley (this site)"
+title: "David Buckley (this site)"
 phase: 1
 status: shipped
 live_url: "https://davidbuckley.vercel.app"

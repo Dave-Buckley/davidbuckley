@@ -19,7 +19,7 @@ export default async function HomePage() {
   return (
     <main className="max-w-2xl mx-auto px-6 py-16 space-y-12">
       <header className="space-y-2">
-        <h1 className="text-4xl font-serif tracking-tight text-neutral-900">davidbuckley</h1>
+        <h1 className="text-4xl font-serif tracking-tight text-neutral-900">David Buckley</h1>
         <p className="text-lg text-neutral-600">Junior software engineer, UK.</p>
       </header>
 

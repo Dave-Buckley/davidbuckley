@@ -5,7 +5,7 @@ export function SiteNav() {
     <header className="border-b border-neutral-200">
       <div className="max-w-2xl mx-auto px-6 py-4 flex items-center justify-between">
         <Link href="/" className="font-serif text-lg tracking-tight text-neutral-900">
-          davidbuckley
+          David Buckley
         </Link>
         <nav className="flex items-center gap-5 text-sm text-neutral-600">
           <Link href="/projects" className="hover:text-neutral-900 transition-colors">
