@@ -1,0 +1,31 @@
+---
+number: 5
+name: "Deeper AI — RAG, Agents, Fine-tuning, MLOps"
+window: "Months 9-13"
+status: planned
+---
+
+RAG + agents + fine-tuning + MLOps + OSS contribution + month-12 external calibration. The differentiator layer.
+
+## Tasks
+
+- [ ] Ship deployed RAG app: ingestion, chunking, pgvector, citations, evals (AIP-03)
+- [ ] Ship deployed agentic app: LangGraph, ≥2 tools, reasoning trace (AIP-04)
+- [ ] Every AI app has an evals harness + quantified failure mode (AIP-06)
+- [ ] Fine-tuning project beyond LoRA-on-toy with eval harness + before/after (DAI-01)
+- [ ] MLOps artifact: CI + tests + versioning + one monitored metric (DAI-02)
+- [ ] Merged PR to an open-source AI/ML repo (DAI-03)
+- [ ] 6+ technical blog posts on the portfolio (DAI-04)
+- [ ] Writeup: reviewing/refactoring AI-generated code (before/after diff) (DAI-05)
+- [ ] MCP server deliverable — expose or consume an MCP (MCP-01)
+- [ ] Month-12 calibration: SWE friend walkthrough + hiring-manager feedback (ACC-03)
+- [ ] LinkedIn phase-completion post (SOC-03)
+- [ ] LinkedIn project launch posts (SOC-04)
+- [ ] Month-12 LinkedIn calibration post (SOC-05)
+
+## Resources
+
+- [LangGraph docs](https://langchain-ai.github.io/langgraph/) — free
+- [Model Context Protocol spec](https://modelcontextprotocol.io/) — Anthropic
+- [Sentry free tier](https://sentry.io/) — MLOps monitoring
+- [GitHub Actions](https://docs.github.com/en/actions) — free for public repos
