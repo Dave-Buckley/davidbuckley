@@ -51,6 +51,12 @@ Six phases across 18 months — see [`/phases`](https://davidbuckley.vercel.app/
 
 Everything here is free. Steal it if you want it.
 
+## Construction method
+
+The scaffolding layer of this site (Next.js, libraries, components, deployment wiring) was produced via AI pair programming with **Claude Opus 4.6** through the **Claude Code** CLI. Subsequent programme artefacts shipped across Phases 2-6 — Python, machine learning, deployed applications, technical writeups — are authored directly, with Claude used only as a code reviewer, concept tutor, and debugger.
+
+This distinction is surfaced on the site's about page and the Phase 1 project writeup.
+
 ## License
 
-MIT — the code. The writeups and narrative are mine; please don't copy those verbatim, but feel free to adapt the shape.
+MIT — the code. The writeups and narrative are authored by David Buckley; please don't copy those verbatim, but feel free to adapt the shape.

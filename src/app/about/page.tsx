@@ -34,6 +34,13 @@ export default function AboutPage() {
           The objective is to demonstrate engineering capability through shipped work, with every
           artefact reviewable at source.
         </p>
+        <p>
+          The scaffolding layer of this site was produced via AI pair programming with Claude
+          Opus, driven through the Claude Code CLI. Programme artefacts shipped in subsequent
+          phases — Python code, machine learning projects, deployed applications, technical
+          writeups — are authored directly, with Claude used only as a code reviewer, tutor, and
+          debugger. This distinction is explicit throughout the portfolio.
+        </p>
       </div>
 
       <hr className="border-neutral-200" />

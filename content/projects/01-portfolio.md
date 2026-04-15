@@ -32,6 +32,12 @@ The portfolio is the accountability artefact: a public URL backed by a public re
 - Pure functions for progress computation with test coverage for edge cases (empty content, case-insensitive checkbox matching, division-by-zero guards)
 - A two-command session CLI (`study:start` / `study:end`) using only the Node.js standard library
 
+### Construction method
+
+The portfolio scaffolding was produced via AI pair programming with **Claude Opus 4.6**, driven through the **Claude Code** CLI. This is explicit: the infrastructure layer of this site — Next.js routing, TypeScript libraries, React components, deployment configuration — was generated with substantial AI assistance, then reviewed and shipped.
+
+Subsequent programme artefacts, beginning with Phase 2 (Python, CS fundamentals, DSA), are authored directly. Claude is used only as a code reviewer, concept tutor, and debugger in that work — not as an author. This distinction matters: the portfolio is the container; the programme output is the evidence.
+
 ## Results
 
 - Live deployment at `davidbuckley.vercel.app` with automatic redeploy on push to `main`
