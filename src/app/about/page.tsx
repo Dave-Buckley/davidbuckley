@@ -10,7 +10,7 @@ export default function AboutPage() {
       <div className="space-y-4 text-neutral-800 leading-relaxed">
         <p>
           David Buckley is a UK-based software and AI engineer, transitioning from a career in
-          physical education. This site documents a structured eighteen-month programme designed
+          physical education. This site documents a structured self-directed programme designed
           to develop production-quality engineering capability across the full modern AI stack.
         </p>
         <p>

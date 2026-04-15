@@ -27,7 +27,7 @@ export default async function HomePage() {
       <hr className="border-neutral-200" />
 
       <section className="space-y-4">
-        <p className="text-sm text-neutral-700">18-month pivot, shipping in public.</p>
+        <p className="text-sm text-neutral-700">A structured programme, shipping in public.</p>
         {active && (
           <div>
             <p className="text-sm text-neutral-600 mb-1">
@@ -109,7 +109,7 @@ export default async function HomePage() {
         <Link href="/phases" className="underline underline-offset-4 hover:text-neutral-900">
           full programme
         </Link>{' '}
-        for the complete eighteen-month curriculum and live progress.
+        for the complete curriculum and live progress.
       </p>
     </main>
   )

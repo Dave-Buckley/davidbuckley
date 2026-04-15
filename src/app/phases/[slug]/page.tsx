@@ -32,9 +32,7 @@ export default async function PhaseDetailPage({
       </Link>
 
       <header className="space-y-2">
-        <p className="text-xs uppercase tracking-wider text-neutral-500">
-          {phase.status} · {phase.window}
-        </p>
+        <p className="text-xs uppercase tracking-wider text-neutral-500">{phase.status}</p>
         <h1 className="text-3xl font-serif tracking-tight">
           <span className="text-neutral-500">{String(phase.number).padStart(2, '0')}</span>{' '}
           {phase.name}

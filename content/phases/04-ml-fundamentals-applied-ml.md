@@ -1,7 +1,7 @@
 ---
 number: 4
 name: "ML Fundamentals & Applied ML"
-window: "Months 6-10"
+window: ""
 status: planned
 ---
 

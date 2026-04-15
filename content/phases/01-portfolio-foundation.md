@@ -1,7 +1,7 @@
 ---
 number: 1
 name: "Portfolio Foundation"
-window: "Month 1"
+window: ""
 status: active
 ---
 

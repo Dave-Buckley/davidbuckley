@@ -2,7 +2,7 @@
 
 The portfolio at **[davidbuckley.vercel.app](https://davidbuckley.vercel.app)**.
 
-An 18-month self-taught programme to become an AI software engineer, documented in public. Zero cost — every resource and tool is free.
+A structured self-directed programme to become an AI software engineer, documented in public. Zero cost — every resource and tool is free.
 
 ## What this is
 
@@ -47,7 +47,7 @@ Each end-of-session commit deploys a new version automatically via Vercel's GitH
 
 ## Programme
 
-Six phases across 18 months — see [`/phases`](https://davidbuckley.vercel.app/phases) on the live site, or `content/phases/` in this repo.
+Six phases — see [`/phases`](https://davidbuckley.vercel.app/phases) on the live site, or `content/phases/` in this repo.
 
 Everything here is free. Steal it if you want it.
 

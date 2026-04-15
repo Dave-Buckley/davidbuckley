@@ -1,6 +1,6 @@
 ---
 title: LinkedIn Message Templates
-purpose: Connection-request note templates used across the eighteen-month programme
+purpose: Connection-request note templates used across the programme
 cluster: NET-01 through NET-06
 last_updated: 2026-04-16
 ---
@@ -16,10 +16,10 @@ Each template is under 300 characters (LinkedIn's note limit) and must be person
 For former colleagues, university peers, and other existing contacts.
 
 ```
-Hi {first_name} — reconnecting as I transition into software and AI engineering. I'm documenting an eighteen-month self-directed programme publicly at davidbuckley.vercel.app. Would be good to stay in touch.
+Hi {first_name} — reconnecting as I transition into software and AI engineering. I'm documenting a self-directed programme publicly at davidbuckley.vercel.app. Would be good to stay in touch.
 ```
 
-Use during the first month. Prior relationship removes the need for extended context.
+Use during the opening weeks of the programme. Prior relationship removes the need for extended context.
 
 ---
 
@@ -28,7 +28,7 @@ Use during the first month. Prior relationship removes the need for extended con
 For engineers publicly documenting a similar career transition.
 
 ```
-Hi {first_name} — your {post_or_project} on {target} resonated. I'm working through a similar eighteen-month transition into software and AI engineering (documented at davidbuckley.vercel.app). Happy to compare notes.
+Hi {first_name} — your {post_or_project} on {target} resonated. I'm working through a similar transition into software and AI engineering (documented at davidbuckley.vercel.app). Happy to compare notes.
 ```
 
 Use from Phase 2 onwards. Reference a specific piece of their work — generic outreach reads as mass-sent.
@@ -52,7 +52,7 @@ Use from Phase 3 onwards, once a substantive shipped project is available to ref
 For senior engineers or technical leads whose posts, talks, or writing David has actively engaged with.
 
 ```
-Hi {first_name} — your {post_or_talk} on {specific_topic} meaningfully shifted how I'm approaching {area}. I'm an engineer working through a public eighteen-month programme at davidbuckley.vercel.app. No ask — wanted to say thank you.
+Hi {first_name} — your {post_or_talk} on {specific_topic} meaningfully shifted how I'm approaching {area}. I'm an engineer working through a public programme at davidbuckley.vercel.app. No ask — wanted to say thank you.
 ```
 
 Use after genuine engagement with their content. The "no ask" framing is important.
@@ -67,7 +67,7 @@ For engineering managers, technical leads, and heads of AI/engineering at UK com
 Hi {first_name} — following {company}'s work on {specific_product_or_publication}. I'm building a public AI engineering portfolio at davidbuckley.vercel.app and currently working on {current_project}. Would value connecting to follow what your team is publishing.
 ```
 
-Use in Phase 5 (~months 9-13), before any active job search. Target organisations where you have engaged with specific recent public output.
+Use in Phase 5, before any active job search. Target organisations where you have engaged with specific recent public output.
 
 ---
 
@@ -76,7 +76,7 @@ Use in Phase 5 (~months 9-13), before any active job search. Target organisation
 For Sports & Exercise Science alumni and other prior-institution contacts now working in technology.
 
 ```
-Hi {first_name} — fellow {university} alumnus. I'm transitioning into software and AI engineering and documenting an eighteen-month programme publicly at davidbuckley.vercel.app. I noticed you're at {company_or_role} — would be good to stay connected as I move through the programme.
+Hi {first_name} — fellow {university} alumnus. I'm transitioning into software and AI engineering and documenting my programme publicly at davidbuckley.vercel.app. I noticed you're at {company_or_role} — would be good to stay connected as I move through the programme.
 ```
 
 Use in any phase. The alumnus framing converts well as a warm-cold bridge.
@@ -88,7 +88,7 @@ Use in any phase. The alumnus framing converts well as a warm-cold bridge.
 For contacts who have connected or followed first.
 
 ```
-Thanks for connecting, {first_name}. I'm working through an eighteen-month self-directed programme in software and AI engineering, documented publicly at davidbuckley.vercel.app. Happy to share more about the programme if useful.
+Thanks for connecting, {first_name}. I'm working through a self-directed programme in software and AI engineering, documented publicly at davidbuckley.vercel.app. Happy to share more about the programme if useful.
 ```
 
 Use within 24 hours of acceptance. Always reciprocal, never a cold ask.

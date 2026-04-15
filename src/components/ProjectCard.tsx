@@ -15,12 +15,12 @@ export function ProjectCard({ phase, project }: ProjectCardProps) {
       <div className="flex items-baseline justify-between gap-2 mb-2">
         <p className="text-xs uppercase tracking-wider text-neutral-500">Phase {phase.number}</p>
         <span className="text-xs uppercase tracking-wider text-neutral-500">
-          {isLive ? 'Live' : `Coming ${phase.window}`}
+          {isLive ? 'Live' : 'Planned'}
         </span>
       </div>
       <h3 className="text-lg font-medium mb-1">{project?.title ?? phase.name}</h3>
       <p className="text-sm text-neutral-600 mb-3">
-        {project?.summary ?? `Coming in Phase ${phase.number}. ${phase.window}.`}
+        {project?.summary ?? `Planned deliverable for Phase ${phase.number}.`}
       </p>
       {isLive && project && (
         <div className="flex flex-wrap gap-x-4 gap-y-1 text-sm">

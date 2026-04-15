@@ -1,7 +1,7 @@
 ---
 number: 2
 name: "Programming & CS Fundamentals"
-window: "Months 1-4"
+window: ""
 status: active
 ---
 
@@ -19,11 +19,11 @@ Establish a foundation in Python, computer science fundamentals, data structures
 
 ## Recommended sequence
 
-1. **CS50P Week 0** (today) — Functions and Variables lecture, then Problem Set 0 (Indoor Voice)
-2. **CS50P Weeks 1-4** — work through problem sets in order, commit every session
-3. **Missing Semester Lecture 1** (week 2) — shell basics, alongside CS50P
-4. **CS50x Week 0** (week 3) — C-based intro, run in parallel once CS50P is flowing
-5. **DSA repository** (week 4+) — start with arrays and two pointers, aim for 2-3 problems per session
+1. **CS50P Week 0** — Functions and Variables lecture, then Problem Set 0 (Indoor Voice)
+2. **CS50P onwards** — work through problem sets in order, commit every session
+3. **Missing Semester Lecture 1** — shell basics, begin after CS50P is flowing
+4. **CS50x Week 0** — C-based introduction to computer science, run in parallel with CS50P
+5. **DSA repository** — start with arrays and two-pointer patterns, aim for two to three problems per session
 
 ## Resources
 

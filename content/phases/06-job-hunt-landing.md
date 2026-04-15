@@ -1,7 +1,7 @@
 ---
 number: 6
 name: "Job Hunt & Landing"
-window: "Months 10-18"
+window: ""
 status: planned
 ---
 

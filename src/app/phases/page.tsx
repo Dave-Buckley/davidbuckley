@@ -11,8 +11,8 @@ export default function PhasesPage() {
       <header className="space-y-2">
         <h1 className="text-3xl font-serif tracking-tight">Phases</h1>
         <p className="text-neutral-600">
-          The eighteen-month programme is organised into six phases. Each phase has a defined
-          window, a status, and a set of concrete deliverables tracked below.
+          The programme is organised into six phases. Each phase has a defined status and a set
+          of concrete deliverables tracked below.
         </p>
       </header>
 
@@ -36,7 +36,6 @@ export default function PhasesPage() {
                     {p.status}
                   </span>
                 </div>
-                <p className="text-sm text-neutral-600">{p.window}</p>
                 <ProgressBar percent={prog.percent} />
                 <p className="text-xs text-neutral-500">
                   {prog.completed} of {prog.total} tasks

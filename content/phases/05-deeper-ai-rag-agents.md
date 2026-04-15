@@ -1,7 +1,7 @@
 ---
 number: 5
 name: "Deeper AI — RAG, Agents, Fine-tuning, MLOps"
-window: "Months 9-13"
+window: ""
 status: planned
 ---
 
@@ -18,10 +18,10 @@ Advance into production-grade AI engineering: retrieval-augmented generation, ag
 - [ ] 6+ technical blog posts on the portfolio (DAI-04)
 - [ ] Writeup: reviewing/refactoring AI-generated code (before/after diff) (DAI-05)
 - [ ] MCP server deliverable — expose or consume an MCP (MCP-01)
-- [ ] Month-12 calibration: SWE friend walkthrough + hiring-manager feedback (ACC-03)
+- [ ] Commission an external calibration: senior engineer walkthrough and hiring-manager feedback (ACC-03)
 - [ ] LinkedIn phase-completion post (SOC-03)
 - [ ] LinkedIn project launch posts (SOC-04)
-- [ ] Month-12 LinkedIn calibration post (SOC-05)
+- [ ] Publish a calibration post on LinkedIn after the external review (SOC-05)
 
 ## Resources
 

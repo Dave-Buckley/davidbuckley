@@ -10,10 +10,10 @@ const serif = Fraunces({ subsets: ['latin'], variable: '--font-serif', display: 
 export const metadata: Metadata = {
   title: 'David Buckley — Junior software engineer, UK',
   description:
-    '18-month self-taught pivot into software / AI engineering, documented in public. Zero cost, all free resources.',
+    'A structured self-directed programme into software and AI engineering, documented in public. Zero cost, all free resources.',
   openGraph: {
     title: 'David Buckley — Junior software engineer, UK',
-    description: '18-month pivot, shipping in public.',
+    description: 'A structured programme, shipping in public.',
     type: 'website',
   },
 }

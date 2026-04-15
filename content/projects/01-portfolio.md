@@ -9,7 +9,7 @@ summary: "A Next.js 16 portfolio with a build-time progress bar driven by markdo
 
 ## Problem
 
-A self-directed eighteen-month engineering programme requires a single source of truth for progress, deliverables, and documentation. Without visible, structured output, individual study sessions risk becoming invisible and unaccountable.
+A self-directed engineering programme requires a single source of truth for progress, deliverables, and documentation. Without visible, structured output, individual study sessions risk becoming invisible and unaccountable.
 
 ## Approach
 
