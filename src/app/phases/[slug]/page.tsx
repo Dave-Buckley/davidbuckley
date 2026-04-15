@@ -4,6 +4,7 @@ import { getPhases, getPhaseBySlug, getProjects } from '@/lib/content'
 import { computePhaseProgress } from '@/lib/progress'
 import { renderMarkdown } from '@/lib/markdown'
 import { ProgressBar } from '@/components/ProgressBar'
+import { StuckCard } from '@/components/StuckCard'
 
 export async function generateStaticParams() {
   return getPhases().map((p) => ({ slug: p.slug }))
@@ -50,6 +51,8 @@ export default async function PhaseDetailPage({
         className="prose prose-neutral max-w-none prose-headings:font-serif prose-a:text-neutral-900 prose-a:underline-offset-4"
         dangerouslySetInnerHTML={{ __html: html }}
       />
+
+      {phase.status === 'active' && <StuckCard />}
 
       {artifacts.length > 0 && (
         <section className="border-t border-neutral-200 pt-6">

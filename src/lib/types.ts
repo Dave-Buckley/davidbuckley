@@ -33,3 +33,10 @@ export interface PhaseProgress {
   total: number
   percent: number
 }
+
+export interface Task {
+  checked: boolean
+  text: string
+  url: string | null
+  reqId: string | null
+}

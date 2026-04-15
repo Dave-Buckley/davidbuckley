@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { getPhases } from '@/lib/content'
+import { getPhases, getNextActionableTask } from '@/lib/content'
 import { computePhaseProgress, computeOverallProgress } from '@/lib/progress'
 import { getContributionData } from '@/lib/github'
 import { formatRelativeTime } from '@/lib/time'
@@ -15,6 +15,7 @@ export default async function HomePage() {
   const active = phaseProgress.find((x) => x.phase.status === 'active') ?? phaseProgress[0]
   const username = process.env.GITHUB_USERNAME ?? 'davidbuckley'
   const { days, lastCommitDate } = await getContributionData(username)
+  const next = getNextActionableTask()
 
   return (
     <main className="max-w-2xl mx-auto px-6 py-16 space-y-12">
@@ -44,6 +45,31 @@ export default async function HomePage() {
       <section>
         <Heatmap days={days} />
       </section>
+
+      {next && (
+        <section className="border border-neutral-900 rounded-sm p-5 space-y-3 bg-white">
+          <p className="text-xs uppercase tracking-wider text-neutral-500">
+            Next action · Phase {next.phase.number}
+          </p>
+          <p className="text-base text-neutral-900">{next.task.text}</p>
+          <div className="flex flex-wrap gap-3 pt-1">
+            {next.task.url && (
+              <a
+                href={next.task.url}
+                className="text-sm font-medium border border-neutral-900 bg-neutral-900 text-white px-3 py-1.5 rounded-sm hover:bg-neutral-700 hover:border-neutral-700 transition-colors"
+              >
+                Open resource →
+              </a>
+            )}
+            <Link
+              href="/next"
+              className="text-sm font-medium border border-neutral-300 px-3 py-1.5 rounded-sm hover:border-neutral-900 transition-colors"
+            >
+              Session checklist
+            </Link>
+          </div>
+        </section>
+      )}
 
       <hr className="border-neutral-200" />
 

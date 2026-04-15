@@ -1,7 +1,14 @@
 import fs from 'node:fs'
 import path from 'node:path'
 import matter from 'gray-matter'
-import type { Phase, Project, JournalEntry, PhaseStatus, ProjectStatus } from './types'
+import type {
+  Phase,
+  Project,
+  JournalEntry,
+  PhaseStatus,
+  ProjectStatus,
+  Task,
+} from './types'
 
 const CONTENT_DIR = () => path.join(process.cwd(), 'content')
 
@@ -82,4 +89,56 @@ export function getJournalEntries(): JournalEntry[] {
 
 export function getJournalEntryBySlug(slug: string): JournalEntry | null {
   return getJournalEntries().find((e) => e.slug === slug) ?? null
+}
+
+const TASK_LINE = /^- \[([ xX])\]\s+(.+)$/
+const LINKED_TASK = /^\[(.+?)\]\((.+?)\)\s*(?:\(([A-Z]+-\d+)\))?\s*$/
+const PLAIN_TASK = /^(.+?)(?:\s*\(([A-Z]+-\d+)\))?\s*$/
+
+export function parseTasks(content: string): Task[] {
+  const tasks: Task[] = []
+  for (const line of content.split('\n')) {
+    const m = line.match(TASK_LINE)
+    if (!m) continue
+    const checked = m[1].toLowerCase() === 'x'
+    const body = m[2].trim()
+    const linked = body.match(LINKED_TASK)
+    if (linked) {
+      tasks.push({
+        checked,
+        text: linked[1].trim(),
+        url: linked[2].trim(),
+        reqId: linked[3] ?? null,
+      })
+      continue
+    }
+    const plain = body.match(PLAIN_TASK)
+    if (plain) {
+      tasks.push({
+        checked,
+        text: plain[1].trim(),
+        url: null,
+        reqId: plain[2] ?? null,
+      })
+      continue
+    }
+    tasks.push({ checked, text: body, url: null, reqId: null })
+  }
+  return tasks
+}
+
+export function getNextActionableTask(): { phase: Phase; task: Task } | null {
+  const phases = getPhases()
+  const candidates = phases
+    .filter((p) => p.status !== 'complete')
+    .sort((a, b) => b.number - a.number)
+  for (const phase of candidates) {
+    const next = parseTasks(phase.content).find((t) => !t.checked && t.url)
+    if (next) return { phase, task: next }
+  }
+  for (const phase of candidates) {
+    const next = parseTasks(phase.content).find((t) => !t.checked)
+    if (next) return { phase, task: next }
+  }
+  return null
 }
