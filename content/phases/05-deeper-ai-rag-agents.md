@@ -5,7 +5,7 @@ window: "Months 9-13"
 status: planned
 ---
 
-RAG + agents + fine-tuning + MLOps + OSS contribution + month-12 external calibration. The differentiator layer.
+Advance into production-grade AI engineering: retrieval-augmented generation, agentic systems, model fine-tuning, MLOps, and open-source contribution. This phase establishes the senior-track technical depth beyond foundational applied machine learning.
 
 ## Tasks
 

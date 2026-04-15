@@ -5,7 +5,7 @@ window: "Months 3-7"
 status: planned
 ---
 
-TypeScript / Next.js / Postgres web stack fluency + two shipped AI-powered apps — the "can you build an app at all" proof.
+Develop proficiency in the modern TypeScript web stack — Next.js, Postgres, authentication, deployment — and ship two publicly available AI-powered applications demonstrating end-to-end product capability.
 
 ## Tasks
 

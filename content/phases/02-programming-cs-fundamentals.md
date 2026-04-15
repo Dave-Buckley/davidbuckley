@@ -5,7 +5,7 @@ window: "Months 1-4"
 status: planned
 ---
 
-Python fluency + CS fundamentals + DSA + Git hygiene + systems/networks literacy to CS50 standard, all shipped as code + writeups, not just certificates.
+Establish a foundation in Python, computer science fundamentals, data structures and algorithms, professional Git workflow, and core systems and networking concepts. Each topic is evidenced through working code and technical writeups rather than certificates alone.
 
 ## Tasks
 

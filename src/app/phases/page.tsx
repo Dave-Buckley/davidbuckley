@@ -11,7 +11,8 @@ export default function PhasesPage() {
       <header className="space-y-2">
         <h1 className="text-3xl font-serif tracking-tight">Phases</h1>
         <p className="text-neutral-600">
-          Six phases, eighteen months, every task a public checkbox.
+          The eighteen-month programme is organised into six phases. Each phase has a defined
+          window, a status, and a set of concrete deliverables tracked below.
         </p>
       </header>
 

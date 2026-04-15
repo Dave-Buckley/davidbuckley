@@ -10,8 +10,9 @@ export default function ProjectsPage() {
       <header className="space-y-2">
         <h1 className="text-3xl font-serif tracking-tight">Projects</h1>
         <p className="text-neutral-600">
-          One shipped project per phase — live demo, public repo, Problem → Approach → Results
-          writeup for each.
+          Each phase of the programme ships at least one public project, accompanied by a live
+          deployment, public source code, and a technical writeup covering the problem, approach,
+          and results.
         </p>
       </header>
 

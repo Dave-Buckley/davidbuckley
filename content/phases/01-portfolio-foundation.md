@@ -5,7 +5,7 @@ window: "Month 1"
 status: active
 ---
 
-The portfolio site itself, live, auto-deploying, with a real progress bar — the accountability artifact everything else lands on.
+Deliver a live, auto-deploying portfolio site with a build-time progress bar. This serves as the foundation on which every subsequent phase of the programme is documented and published.
 
 ## Tasks
 

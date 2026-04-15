@@ -9,7 +9,7 @@ export default function JournalPage() {
       <header className="space-y-2">
         <h1 className="text-3xl font-serif tracking-tight">Journal</h1>
         <p className="text-neutral-600">
-          Session-by-session record, newest first. One entry per study day.
+          A chronological record of study sessions and progress updates, most recent first.
         </p>
       </header>
 

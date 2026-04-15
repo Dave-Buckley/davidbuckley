@@ -5,7 +5,7 @@ window: "Months 10-18"
 status: planned
 ---
 
-The application campaign — high-volume targeted apps + warm outreach + interview prep + landed role OR documented MSc decision.
+Consolidate the programme's output into job-application-ready materials and, if pursued, run a structured application campaign combining targeted applications, warm outreach, and interview preparation.
 
 ## Tasks
 

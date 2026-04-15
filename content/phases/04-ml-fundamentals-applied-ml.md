@@ -5,7 +5,7 @@ window: "Months 6-10"
 status: planned
 ---
 
-End-to-end ML — fast.ai + Andrew Ng + Kaggle + Hugging Face artifact + applied-ML project + referral pathway activation.
+Build end-to-end machine learning capability through structured coursework (fast.ai, Andrew Ng's Machine Learning Specialization, Karpathy's Zero to Hero), public Kaggle and Hugging Face contributions, and a full applied machine learning project with a live demonstration.
 
 ## Tasks
 
