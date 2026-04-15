@@ -3,7 +3,7 @@ title: "davidbuckley (this site)"
 phase: 1
 status: shipped
 live_url: "https://davidbuckley.vercel.app"
-repo_url: "https://github.com/davidbuckley/davidbuckley"
+repo_url: "https://github.com/Dave-Buckley/davidbuckley"
 summary: "The portfolio itself — Next.js 16, file-system content, build-time progress bar, zero infra cost."
 ---
 
@@ -20,7 +20,7 @@ Stack: Next.js 16 App Router, TypeScript, Tailwind 4, deployed free on Vercel Ho
 ## Results
 
 - `davidbuckley.vercel.app` — live
-- `github.com/davidbuckley/davidbuckley` — source of truth, public
+- `github.com/Dave-Buckley/davidbuckley` — source of truth, public
 - Build-time progress bar across 6 phases
 - Zero external services beyond GitHub + Vercel (both free tier)
 - First journal entry: 2026-04-16

@@ -46,7 +46,7 @@ export default function AboutPage() {
             LinkedIn
           </a>{' '}
           ·{' '}
-          <a href="https://github.com/davidbuckley" className="underline underline-offset-4">
+          <a href="https://github.com/Dave-Buckley" className="underline underline-offset-4">
             GitHub
           </a>
         </p>

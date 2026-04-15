@@ -5,7 +5,7 @@ export function SiteFooter() {
         <p>Everything here is free. Steal it if you want it.</p>
         <div className="flex gap-4">
           <a
-            href="https://github.com/davidbuckley/davidbuckley"
+            href="https://github.com/Dave-Buckley/davidbuckley"
             className="hover:text-neutral-900"
           >
             GitHub
