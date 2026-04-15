@@ -9,27 +9,30 @@ export default function AboutPage() {
 
       <div className="space-y-4 text-neutral-800 leading-relaxed">
         <p>
-          I'm David — based in the UK, pivoting from eight years of PE teaching into software and
-          AI engineering. No CS degree, no bootcamp, no MSc (yet). Everything you see here is
-          built from free resources: Harvard CS50, fast.ai, Andrew Ng, LangChain docs, the Next.js
-          Learn course. Nothing paid.
+          David Buckley is a UK-based software and AI engineer, transitioning from a career in
+          physical education. This site documents a structured eighteen-month programme designed
+          to develop production-quality engineering capability across the full modern AI stack.
         </p>
         <p>
-          The programme is eighteen months, split into six phases. Each phase ships real artifacts
-          — deployed apps, GitHub repos, writeups. The portfolio you're reading is the first of
-          them. Every checkbox on the{' '}
+          The programme is organised into six phases covering CS fundamentals, the TypeScript web
+          stack, applied machine learning, and deeper AI engineering including retrieval-augmented
+          generation, agents, and MLOps. Each phase ships concrete artefacts: deployed
+          applications, public repositories, and technical writeups. Progress against the
+          programme is visible on the{' '}
           <Link href="/phases" className="underline underline-offset-4">
             phases page
           </Link>{' '}
-          is a single unit of shippable work; the progress bar above counts them live.
+          and is computed at build time from the completion state of each phase&apos;s task list.
         </p>
         <p>
-          I'm not hiding the teaching background — it's why I can explain a gnarly system clearly
-          — but this is an engineering portfolio. The work is the work.
+          The curriculum draws on open, industry-respected resources including Harvard CS50,
+          fast.ai, Andrew Ng&apos;s Machine Learning Specialization, Karpathy&apos;s Zero to Hero
+          course, and the official Next.js and Vercel AI SDK documentation. All work is delivered
+          in public and is available for technical review.
         </p>
         <p>
-          If you're doing something similar, or just want to see how far this goes, the full
-          programme is public and the code is free to copy.
+          The objective is to demonstrate engineering capability through shipped work, with every
+          artefact reviewable at source.
         </p>
       </div>
 
@@ -37,12 +40,15 @@ export default function AboutPage() {
 
       <div className="text-sm space-y-1 text-neutral-600">
         <p>
-          Currently: <span className="text-neutral-900">Phase 1 — Portfolio Foundation</span>
+          Current phase:{' '}
+          <span className="text-neutral-900">Phase 1 — Portfolio Foundation</span>
         </p>
-        <p>Target: junior software / AI engineer role in the UK by month 18</p>
         <p>
           Contact:{' '}
-          <a href="https://linkedin.com/in/davidbuckley" className="underline underline-offset-4">
+          <a
+            href="https://linkedin.com/in/davidbuckley"
+            className="underline underline-offset-4"
+          >
             LinkedIn
           </a>{' '}
           ·{' '}

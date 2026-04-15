@@ -79,11 +79,11 @@ export default async function HomePage() {
       </nav>
 
       <p className="text-sm text-neutral-600">
-        Follow along:{' '}
+        See the{' '}
         <Link href="/phases" className="underline underline-offset-4 hover:text-neutral-900">
-          the full programme
+          full programme
         </Link>{' '}
-        — everything is free, steal it if you want it.
+        for the complete eighteen-month curriculum and live progress.
       </p>
     </main>
   )
