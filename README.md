@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# davidbuckley
 
-## Getting Started
+The portfolio at **[davidbuckley.vercel.app](https://davidbuckley.vercel.app)**.
 
-First, run the development server:
+An 18-month self-taught programme to become an AI software engineer, documented in public. Zero cost — every resource and tool is free.
+
+## What this is
+
+A Next.js 16 portfolio that doubles as the accountability artifact. Every page is a function of markdown files in `content/`. The progress bar counts `- [x]` checkboxes in `content/phases/*.md` at build time. The last-shipped timestamp + 30-day heatmap come from the GitHub GraphQL API.
+
+## Stack
+
+- Next.js 16 (App Router, Turbopack, RSC)
+- TypeScript + Tailwind CSS 4
+- `gray-matter` + `remark` for markdown (no Contentlayer, no MDX)
+- GitHub GraphQL API for heatmap data (build time only)
+- Vitest for unit tests
+- Vercel Hobby tier for hosting
+
+## Local dev
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Env vars
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Copy `.env.local.example` → `.env.local` and fill in:
 
-## Learn More
+- `GITHUB_TOKEN` — fine-grained PAT, `read:user` + public repo read
+- `GITHUB_USERNAME` — your GitHub login
 
-To learn more about Next.js, take a look at the following resources:
+Without these, the heatmap renders greyed-out (no crash).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Session workflow
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm run study:start   # creates today's journal entry, opens in editor
+# ... do the study ...
+npm run study:end     # prompts + commits + pushes
+```
 
-## Deploy on Vercel
+Each end-of-session commit deploys a new version automatically via Vercel's GitHub integration.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Programme
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Six phases across 18 months — see [`/phases`](https://davidbuckley.vercel.app/phases) on the live site, or `content/phases/` in this repo.
+
+Everything here is free. Steal it if you want it.
+
+## License
+
+MIT — the code. The writeups and narrative are mine; please don't copy those verbatim, but feel free to adapt the shape.
