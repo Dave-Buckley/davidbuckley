@@ -1,65 +1,97 @@
-import Image from "next/image";
+import Link from 'next/link'
+import { getPhases } from '@/lib/content'
+import { computePhaseProgress, computeOverallProgress } from '@/lib/progress'
+import { getContributionData } from '@/lib/github'
+import { formatRelativeTime } from '@/lib/time'
+import { ProgressBar } from '@/components/ProgressBar'
+import { Heatmap } from '@/components/Heatmap'
 
-export default function Home() {
+export const revalidate = false
+
+export default async function HomePage() {
+  const phases = getPhases()
+  const phaseProgress = phases.map((p) => ({ phase: p, prog: computePhaseProgress(p.content) }))
+  const overallPercent = computeOverallProgress(phaseProgress.map((x) => x.prog))
+  const active = phaseProgress.find((x) => x.phase.status === 'active') ?? phaseProgress[0]
+  const username = process.env.GITHUB_USERNAME ?? 'davidbuckley'
+  const { days, lastCommitDate } = await getContributionData(username)
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
-  );
+    <main className="max-w-2xl mx-auto px-6 py-16 space-y-12">
+      <header className="space-y-2">
+        <h1 className="text-4xl font-serif tracking-tight text-neutral-900">davidbuckley</h1>
+        <p className="text-lg text-neutral-600">Junior software engineer, UK.</p>
+      </header>
+
+      <hr className="border-neutral-200" />
+
+      <section className="space-y-4">
+        <p className="text-sm text-neutral-700">18-month pivot, shipping in public.</p>
+        {active && (
+          <div>
+            <p className="text-sm text-neutral-600 mb-1">
+              Phase {active.phase.number} — {active.phase.name}
+            </p>
+            <ProgressBar percent={overallPercent} showPercent />
+          </div>
+        )}
+        <p className="text-xs text-neutral-500">
+          Last shipped:{' '}
+          <span className="text-neutral-900">{formatRelativeTime(lastCommitDate)}</span>
+        </p>
+      </section>
+
+      <section>
+        <Heatmap days={days} />
+      </section>
+
+      <hr className="border-neutral-200" />
+
+      <nav className="space-y-2 text-base">
+        <Link
+          href="/projects"
+          className="flex justify-between py-2 hover:text-neutral-500 transition-colors border-b border-neutral-100"
+        >
+          <span>Projects</span>
+          <span>→</span>
+        </Link>
+        <Link
+          href="/journal"
+          className="flex justify-between py-2 hover:text-neutral-500 transition-colors border-b border-neutral-100"
+        >
+          <span>Journal</span>
+          <span>→</span>
+        </Link>
+        <Link
+          href="/phases"
+          className="flex justify-between py-2 hover:text-neutral-500 transition-colors border-b border-neutral-100"
+        >
+          <span>Phases</span>
+          <span>→</span>
+        </Link>
+        <Link
+          href="/about"
+          className="flex justify-between py-2 hover:text-neutral-500 transition-colors border-b border-neutral-100"
+        >
+          <span>About</span>
+          <span>→</span>
+        </Link>
+        <a
+          href="/cv.pdf"
+          className="flex justify-between py-2 hover:text-neutral-500 transition-colors border-b border-neutral-100"
+        >
+          <span>CV (PDF)</span>
+          <span>↓</span>
+        </a>
+      </nav>
+
+      <p className="text-sm text-neutral-600">
+        Follow along:{' '}
+        <Link href="/phases" className="underline underline-offset-4 hover:text-neutral-900">
+          the full programme
+        </Link>{' '}
+        — everything is free, steal it if you want it.
+      </p>
+    </main>
+  )
 }
