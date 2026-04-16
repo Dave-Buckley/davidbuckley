@@ -10,3 +10,57 @@
 html {
   font-family: var(--font-sans);
 }
+
+/* Task-level expandable guidance (<details> blocks inside the prose article) */
+.prose details {
+  margin: 0.75rem 0 1.5rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid rgb(229 229 229);
+  border-left: 3px solid rgb(180 83 9); /* amber-700 */
+  border-radius: 0.125rem;
+  background-color: rgb(254 252 232); /* amber-50 */
+}
+
+.prose details > summary {
+  cursor: pointer;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: rgb(120 53 15); /* amber-900 */
+  list-style: none;
+}
+
+.prose details > summary::-webkit-details-marker {
+  display: none;
+}
+
+.prose details > summary::before {
+  content: "▸ ";
+  display: inline-block;
+  transition: transform 0.15s ease;
+}
+
+.prose details[open] > summary::before {
+  transform: rotate(90deg);
+}
+
+.prose details > summary + * {
+  margin-top: 0.75rem;
+}
+
+.prose details p,
+.prose details ul,
+.prose details ol {
+  font-size: 0.9375rem;
+  color: rgb(38 38 38);
+}
+
+.prose details p:first-of-type {
+  margin-top: 0.5rem;
+}
+
+.prose details strong {
+  color: rgb(23 23 23);
+  font-weight: 600;
+}
