@@ -129,9 +129,10 @@ export function parseTasks(content: string): Task[] {
 
 export function getNextActionableTask(): { phase: Phase; task: Task } | null {
   const phases = getPhases()
-  const candidates = phases
-    .filter((p) => p.status !== 'complete')
-    .sort((a, b) => b.number - a.number)
+  // Prefer the lowest-numbered active phase, then any non-complete phase in order
+  const active = phases.filter((p) => p.status === 'active')
+  const rest = phases.filter((p) => p.status === 'planned')
+  const candidates = [...active, ...rest]
   for (const phase of candidates) {
     const next = parseTasks(phase.content).find((t) => !t.checked && t.url)
     if (next) return { phase, task: next }

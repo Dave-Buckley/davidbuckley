@@ -10,11 +10,11 @@ Establish a foundation in Python, computer science fundamentals, data structures
 ## Tasks
 
 - [ ] [Complete CS50P and ship three Python artefacts with writeups](https://cs50.harvard.edu/python/) (FND-01)
+- [ ] [Complete MIT Missing Semester and demonstrate Git and CLI fluency in commit history](https://missing.csail.mit.edu/) (FND-04)
 - [ ] [Complete Harvard CS50x with a publicly linked final project](https://cs50.harvard.edu/x/) (FND-02)
 - [ ] [Build a DSA repository of fifty LeetCode-style problems plus a patterns blog post](https://neetcode.io/roadmap) (FND-03)
-- [ ] [Complete MIT Missing Semester and demonstrate Git and CLI fluency in commit history](https://missing.csail.mit.edu/) (FND-04)
-- [ ] [Read *Software Engineering at Google* and demonstrate practices in commits](https://abseil.io/resources/swe-book) (FND-07)
 - [ ] Publish a blog post covering HTTP, DNS, TCP, and REST with a worked example (FND-08)
+- [ ] [Read *Software Engineering at Google* and demonstrate practices in commits](https://abseil.io/resources/swe-book) (FND-07)
 - [ ] Publish a LinkedIn phase-completion post summarising Phase 1 output (SOC-03)
 
 ## Recommended sequence

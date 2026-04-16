@@ -4,6 +4,7 @@ import { getPhases, getPhaseBySlug, getProjects } from '@/lib/content'
 import { computePhaseProgress } from '@/lib/progress'
 import { renderMarkdown } from '@/lib/markdown'
 import { ProgressBar } from '@/components/ProgressBar'
+import { StatusPill } from '@/components/StatusPill'
 import { StuckCard } from '@/components/StuckCard'
 
 export async function generateStaticParams() {
@@ -31,14 +32,23 @@ export default async function PhaseDetailPage({
         ← All phases
       </Link>
 
-      <header className="space-y-2">
-        <p className="text-xs uppercase tracking-wider text-neutral-500">{phase.status}</p>
+      <header className="space-y-3">
+        <StatusPill status={phase.status} />
         <h1 className="text-3xl font-serif tracking-tight">
           <span className="text-neutral-500">{String(phase.number).padStart(2, '0')}</span>{' '}
           {phase.name}
         </h1>
         <div className="pt-2">
-          <ProgressBar percent={prog.percent} />
+          <ProgressBar
+            percent={prog.percent}
+            variant={
+              phase.status === 'active'
+                ? 'active'
+                : phase.status === 'complete'
+                  ? 'complete'
+                  : 'default'
+            }
+          />
         </div>
         <p className="text-xs text-neutral-500">
           {prog.completed} of {prog.total} tasks
