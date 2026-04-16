@@ -29,10 +29,14 @@ if (!fs.existsSync(file)) {
   )
 }
 
-const editor =
-  process.env.EDITOR ||
-  process.env.VISUAL ||
-  (process.platform === 'win32' ? 'code' : 'nano')
+function pickEditor() {
+  if (process.env.PORTFOLIO_EDITOR) return process.env.PORTFOLIO_EDITOR
+  if (process.platform === 'win32') return 'code'
+  return process.env.EDITOR || process.env.VISUAL || 'nano'
+}
+
+const editor = pickEditor()
+console.log(`[study:start] opening in ${editor}`)
 
 const result = spawnSync(editor, [file], {
   stdio: 'inherit',
