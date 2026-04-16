@@ -10,6 +10,7 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "study:start": "node scripts/study-start.mjs",
+    "study:sketch": "node scripts/study-sketch.mjs",
     "study:end": "node scripts/study-end.mjs"
   },
   "dependencies": {
