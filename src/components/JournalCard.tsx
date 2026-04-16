@@ -19,7 +19,9 @@ export function JournalCard({ entry, preview }: JournalCardProps) {
     >
       <div className="flex items-baseline justify-between gap-4">
         <h2 className="text-lg font-medium text-neutral-900">{date}</h2>
-        <span className="text-xs text-neutral-500">Phase {entry.phase}</span>
+        <span className="text-xs text-neutral-500">
+          {entry.phase > 0 ? `Phase ${entry.phase}` : 'Setup'}
+        </span>
       </div>
       {preview && <p className="mt-1 text-sm text-neutral-600 line-clamp-2">{preview}</p>}
     </Link>

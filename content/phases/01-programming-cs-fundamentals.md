@@ -1,5 +1,5 @@
 ---
-number: 2
+number: 1
 name: "Programming & CS Fundamentals"
 window: ""
 status: active
@@ -15,7 +15,7 @@ Establish a foundation in Python, computer science fundamentals, data structures
 - [ ] [Complete MIT Missing Semester and demonstrate Git and CLI fluency in commit history](https://missing.csail.mit.edu/) (FND-04)
 - [ ] [Read *Software Engineering at Google* and demonstrate practices in commits](https://abseil.io/resources/swe-book) (FND-07)
 - [ ] Publish a blog post covering HTTP, DNS, TCP, and REST with a worked example (FND-08)
-- [ ] Publish a LinkedIn phase-completion post summarising Phase 2 output (SOC-03)
+- [ ] Publish a LinkedIn phase-completion post summarising Phase 1 output (SOC-03)
 
 ## Recommended sequence
 

@@ -29,7 +29,9 @@ export default async function JournalEntryPage({
         ← All entries
       </Link>
       <header className="space-y-1">
-        <p className="text-xs uppercase tracking-wider text-neutral-500">Phase {entry.phase}</p>
+        <p className="text-xs uppercase tracking-wider text-neutral-500">
+          {entry.phase > 0 ? `Phase ${entry.phase}` : 'Setup'}
+        </p>
         <h1 className="text-3xl font-serif tracking-tight">{date}</h1>
       </header>
       <article

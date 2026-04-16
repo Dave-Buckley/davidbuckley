@@ -23,7 +23,7 @@ Use during the opening weeks of the programme. Prior relationship removes the ne
 
 ---
 
-## 2. Peer engineer mid-transition (NET-02, Phase 2)
+## 2. Peer engineer mid-transition (NET-02, Phase 1)
 
 For engineers publicly documenting a similar career transition.
 
@@ -31,11 +31,11 @@ For engineers publicly documenting a similar career transition.
 Hi {first_name} — your {post_or_project} on {target} resonated. I'm working through a similar transition into software and AI engineering (documented at davidbuckley.vercel.app). Happy to compare notes.
 ```
 
-Use from Phase 2 onwards. Reference a specific piece of their work — generic outreach reads as mass-sent.
+Use from Phase 1 onwards. Reference a specific piece of their work — generic outreach reads as mass-sent.
 
 ---
 
-## 3. Junior engineer at a target-stack company (NET-03, Phase 3)
+## 3. Junior engineer at a target-stack company (NET-03, Phase 2)
 
 For engineers working on stacks aligned with the programme (TypeScript, Next.js, AI SDK, Python, ML).
 
@@ -43,11 +43,11 @@ For engineers working on stacks aligned with the programme (TypeScript, Next.js,
 Hi {first_name} — I'm an early-career engineer building a public portfolio on the same stack {company} uses. I recently shipped {recent_project_from_portfolio} and would value your perspective when you have time. Happy to connect either way.
 ```
 
-Use from Phase 3 onwards, once a substantive shipped project is available to reference.
+Use from Phase 2 onwards, once a substantive shipped project is available to reference.
 
 ---
 
-## 4. Senior engineer whose content has been engaged with (NET-04, Phases 4-5)
+## 4. Senior engineer whose content has been engaged with (NET-04, Phases 3-4)
 
 For senior engineers or technical leads whose posts, talks, or writing David has actively engaged with.
 
@@ -59,7 +59,7 @@ Use after genuine engagement with their content. The "no ask" framing is importa
 
 ---
 
-## 5. UK engineering leader at a target company (NET-05, Phase 5)
+## 5. UK engineering leader at a target company (NET-05, Phase 4)
 
 For engineering managers, technical leads, and heads of AI/engineering at UK companies on the target list.
 
@@ -67,7 +67,7 @@ For engineering managers, technical leads, and heads of AI/engineering at UK com
 Hi {first_name} — following {company}'s work on {specific_product_or_publication}. I'm building a public AI engineering portfolio at davidbuckley.vercel.app and currently working on {current_project}. Would value connecting to follow what your team is publishing.
 ```
 
-Use in Phase 5, before any active job search. Target organisations where you have engaged with specific recent public output.
+Use in Phase 4, before any active job search. Target organisations where you have engaged with specific recent public output.
 
 ---
 
@@ -100,5 +100,5 @@ Use within 24 hours of acceptance. Always reciprocal, never a cold ask.
 - **300 character limit.** Longer notes are truncated and perform poorly.
 - **Always personalise placeholders.** Unpersonalised notes underperform no note at all.
 - **No pitch.** The portfolio URL does the work of introducing the programme; the note only opens the conversation.
-- **Track outcomes.** From Phase 2 onwards, maintain a private record of template used and acceptance rate.
+- **Track outcomes.** From Phase 1 onwards, maintain a private record of template used and acceptance rate.
 - **Revise each phase.** As the portfolio accumulates shipped work, templates should reference the most recent artefacts rather than earlier framing.

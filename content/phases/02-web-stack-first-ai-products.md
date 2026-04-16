@@ -1,5 +1,5 @@
 ---
-number: 3
+number: 2
 name: "Web Stack & First AI Products"
 window: ""
 status: planned
@@ -37,7 +37,7 @@ Before shipping new applications, achieve a deep understanding of the technologi
 ## Milestones and communication
 
 - [ ] Publish a mid-programme checkpoint writeup reviewing progress against the market criteria (ACC-02)
-- [ ] Publish a LinkedIn phase-completion post summarising Phase 3 output (SOC-03)
+- [ ] Publish a LinkedIn phase-completion post summarising Phase 2 output (SOC-03)
 - [ ] Publish LinkedIn launch posts for AIP-01 and AIP-02 (SOC-04)
 - [ ] Publish a mid-programme calibration post on LinkedIn (SOC-05)
 

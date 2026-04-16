@@ -1,5 +1,5 @@
 ---
-number: 5
+number: 4
 name: "Deeper AI — RAG, Agents, Fine-tuning, MLOps"
 window: ""
 status: planned

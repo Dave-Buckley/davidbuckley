@@ -1,5 +1,5 @@
 ---
-number: 4
+number: 3
 name: "ML Fundamentals & Applied ML"
 window: ""
 status: planned
