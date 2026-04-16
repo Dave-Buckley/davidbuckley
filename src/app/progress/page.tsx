@@ -5,10 +5,10 @@ import { ProgressBar } from '@/components/ProgressBar'
 import { StuckCard } from '@/components/StuckCard'
 
 export const metadata = {
-  title: 'Next action — David Buckley',
+  title: 'Progress — David Buckley',
 }
 
-export default function NextPage() {
+export default function ProgressPage() {
   const next = getNextActionableTask()
   const phases = getPhases()
   const activePhases = phases.filter((p) => p.status === 'active')
@@ -16,9 +16,9 @@ export default function NextPage() {
   return (
     <main className="max-w-2xl mx-auto px-6 py-16 space-y-10">
       <header className="space-y-2">
-        <h1 className="text-3xl font-serif tracking-tight">Next action</h1>
+        <h1 className="text-3xl font-serif tracking-tight">Progress</h1>
         <p className="text-neutral-600">
-          The single next item to work on, pulled from the active phase&apos;s task list.
+          The next actionable item and live progress across every active phase of the programme.
         </p>
       </header>
 

@@ -62,10 +62,10 @@ export default async function HomePage() {
               </a>
             )}
             <Link
-              href="/next"
+              href="/progress"
               className="text-sm font-medium border border-neutral-300 px-3 py-1.5 rounded-sm hover:border-neutral-900 transition-colors"
             >
-              Session checklist
+              Progress
             </Link>
           </div>
         </section>

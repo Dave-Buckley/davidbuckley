@@ -8,8 +8,8 @@ export function SiteNav() {
           David Buckley
         </Link>
         <nav className="flex items-center gap-5 text-sm text-neutral-600">
-          <Link href="/next" className="text-neutral-900 font-medium hover:text-neutral-600 transition-colors">
-            Next
+          <Link href="/progress" className="text-neutral-900 font-medium hover:text-neutral-600 transition-colors">
+            Progress
           </Link>
           <Link href="/projects" className="hover:text-neutral-900 transition-colors">
             Projects
