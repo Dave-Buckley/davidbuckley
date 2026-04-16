@@ -99,6 +99,25 @@ By Phase 3, the senior-engineer advocate contact should be actively making intro
 Optional but recommended: apply to AI data-labelling or tutoring platforms (Outlier, Scale, Surge, Mercor) as a part-time income source. The work exposes you to production model behaviour and adds modest income. Skip if the application friction outweighs the value.
 </details>
 
+- [ ] Add fifteen ML and AI community connections on LinkedIn (NET-04)
+
+<details>
+<summary>More info · NET-04 · ML and AI community</summary>
+
+**What to do**
+Add approximately fifteen connections from the ML and AI community — Kaggle peers encountered during ML-02, fast.ai cohort members, Hugging Face contributors whose work has been referenced, and practitioners publishing applied ML writeups. Anchor connection requests to ML-02, ML-03, or ML-05 artefacts. Use template 4 in `content/linkedin-templates.md` ("senior engineer whose content has been engaged with") where applicable; otherwise template 3.
+
+**What not to worry about**
+- Cold academics — this cluster is for practitioners, not researchers.
+- Low acceptance rates from very senior or high-profile accounts; the connection attempt itself is the signal to the algorithm.
+
+**What counts as complete**
+Fifteen personalised connection requests sent, anchored to specific ML artefacts shipped in this phase. Outcomes tracked privately.
+
+**Why this phase**
+ML artefacts (Kaggle notebook, Hugging Face Space, applied ML project) provide shared-domain context that engineers-only references from earlier phases cannot. This is the phase where the programme first reads as an AI engineer's profile, not a web engineer's.
+</details>
+
 - [ ] Publish a LinkedIn phase-completion post summarising Phase 3 output (SOC-03)
 
 <details>

@@ -93,6 +93,27 @@ Complete at least three mock behavioural interviews (Pramp, Exponent free tier, 
 Either: accept and sign an offer for a junior software or AI engineering role, OR: publish a clear, reasoned decision to pursue a specific named MSc programme with stated acceptance status. Ambiguous outcomes do not satisfy this task — one of the two must be documented.
 </details>
 
+- [ ] Add 30-50 UK hiring managers and target-company engineers during the active hunt (NET-06)
+
+<details>
+<summary>More info · NET-06 · Active-hunt connection expansion</summary>
+
+**What to do**
+During the active job-hunt window, expand the LinkedIn network by a further 30-50 UK hiring managers and engineers at shortlisted companies. This complements — does not replace — JOB-06 warm outreach. NET-06 is connection requests at scale; JOB-06 is specific messaged asks.
+
+Use templates 3, 4, and 5 in `content/linkedin-templates.md`. Each request is still personalised and references specific public output; scale here refers to cadence, not generic bulk sends.
+
+**What not to worry about**
+- Acceptance rate declining at this volume. 25-40% is expected.
+- Connecting with recruiters versus hiring managers. Both are useful; the roles work different filters.
+
+**What counts as complete**
+Between 30 and 50 connection requests sent across the hunt window, tracked by template used and acceptance rate. The phase-end state is a LinkedIn network of 100-120 genuinely relevant UK tech and AI connections — the target first-order graph for mid-career portability.
+
+**Why this phase**
+Network effects compound. Each additional relevant connection increases the likelihood that a role lands in the feed before it reaches a public posting, and the likelihood that warm outreach lands with someone who has seen the portfolio before the application does.
+</details>
+
 - [ ] EU AI Act interview talking point prepared (JOB-09)
 
 <details>

@@ -207,6 +207,25 @@ Build a small AI automation using a no-code or low-code tool (Make.com, n8n self
 A running automation (or detailed teardown if the trigger is private), a public writeup on the portfolio.
 </details>
 
+- [ ] [Containerise one shipped application with Docker and publish a deployment writeup](https://docs.docker.com/get-started/) (MKT-01)
+
+<details>
+<summary>More info · MKT-01 · Docker fundamentals</summary>
+
+**What to do**
+Write a `Dockerfile` and `docker-compose.yml` for either AIP-01 (the CRUD app) or AIP-02 (the AI-powered app). Include the application itself plus its Postgres dependency. Build and run the container locally; confirm parity with the Vercel deployment. Publish a short writeup on the portfolio covering image layers, the multi-stage build pattern, and the differences between a Docker-run instance and the Vercel Functions runtime.
+
+**What not to worry about**
+- Shipping a Docker-based production deployment. Vercel remains the production host. Docker is for demonstrating containerisation fluency.
+- Kubernetes. Not required at junior level.
+
+**What counts as complete**
+A working `Dockerfile` and `docker-compose.yml` in the chosen project's repository. A short technical writeup on the portfolio covering image layers, build caching, and the runtime differences between the container and Vercel.
+
+**Why this exists**
+Docker appears in roughly 70% of UK junior software and AI postings (MARKET_CRITERIA.md §A). Vercel alone does not signal containerisation fluency — this task closes that gap cheaply.
+</details>
+
 ## Milestones and communication
 
 - [ ] Publish a mid-programme checkpoint writeup reviewing progress against the market criteria (ACC-02)
@@ -216,6 +235,25 @@ A running automation (or detailed teardown if the trigger is private), a public 
 
 **What to do**
 Write an honest self-review at the mid-point of the programme. Compare what has shipped against the job-market criteria research in the planning documents. Identify gaps, calibrate the rest of the programme, publish to the portfolio.
+</details>
+
+- [ ] Add fifteen engineers at UK target-stack companies on LinkedIn (NET-03)
+
+<details>
+<summary>More info · NET-03 · Target-company engineers</summary>
+
+**What to do**
+Add approximately fifteen engineers at UK companies whose stack matches the Phase 2 projects — TypeScript, Next.js, Vercel AI SDK, Postgres, Python. Each connection request references a specific shipped portfolio project (AIP-01 or AIP-02). Use template 3 in `content/linkedin-templates.md` ("junior engineer at a target-stack company").
+
+**What not to worry about**
+- Seniority. Mid-level engineers are ideal targets — they read connection requests and are not yet inundated.
+- Acceptance rate. 30-50% is normal for "strangers with a reason".
+
+**What counts as complete**
+Fifteen personalised connection requests sent, each referencing a specific shipped portfolio project. Outcomes tracked privately. This is the first batch of strangers-with-a-reason outreach — the reason is that something has been shipped.
+
+**Why this phase**
+Before Phase 2, there is no shipped work to reference. Attempting target-company outreach earlier produces lower acceptance and weaker signal. After shipping AIP-01 and AIP-02, each request anchors to a concrete artefact.
 </details>
 
 - [ ] Publish a LinkedIn phase-completion post summarising Phase 2 output (SOC-03)

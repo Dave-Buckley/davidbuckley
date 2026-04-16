@@ -130,6 +130,25 @@ Read the core practical chapters. Demonstrate in recent commits across the progr
 The book is most valuable once you have actual code to apply its practices to. Reading it before CS50P finishes is premature.
 </details>
 
+- [ ] Add ten peer connections on LinkedIn using the peer-pivoter template (NET-02)
+
+<details>
+<summary>More info · NET-02 · Peer connections</summary>
+
+**What to do**
+Add approximately ten peer connections on LinkedIn — other engineers documenting a similar career transition, CS50 cohort members active in public channels, and contributors to public DSA repositories. Use template 2 in `content/linkedin-templates.md` ("peer engineer mid-transition").
+
+**What not to worry about**
+- Acceptance rate. A 40-60% acceptance rate is normal and sufficient.
+- Matching all ten within a single week — pace across the phase.
+
+**What counts as complete**
+Ten personalised connection requests sent, each referencing a specific piece of the recipient's public work. Outcomes (sent / accepted / replied) recorded in a private tracking document.
+
+**Why this phase**
+Peer-pivoter connections are low-friction, build reciprocity early, and compound as both sides ship more public work across subsequent phases.
+</details>
+
 - [ ] Publish a LinkedIn phase-completion post summarising Phase 1 output (SOC-03)
 
 <details>

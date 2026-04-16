@@ -117,6 +117,67 @@ Either build an MCP server that exposes a useful capability to AI agents, or bui
 Working MCP server or consumer, public repository, writeup explaining the protocol and the implementation choices.
 </details>
 
+- [ ] [Ship one AI application with a FastAPI Python backend and a Next.js frontend](https://fastapi.tiangolo.com/) (MKT-02)
+
+<details>
+<summary>More info · MKT-02 · Python web backend</summary>
+
+**What to do**
+Build one AI application — typically a RAG or agent variant — with the backend implemented in FastAPI (Python) and the frontend in Next.js. The boundary is a REST or streaming HTTP contract. Deploy both halves. This is the split-stack pattern common in UK 2026 AI-product postings (HN London hiring cluster, Vercel AI SDK roles).
+
+**What not to worry about**
+- Duplicating AIP-03 or AIP-04 effort. This task can *be* the Phase 4 RAG or agent app rather than a separate one — the requirement is architectural (Python backend, TS frontend), not a third app.
+- Rewriting existing TypeScript-only apps. Demonstrate the pattern once, in a new project.
+
+**What counts as complete**
+A deployed two-service application: FastAPI backend publicly reachable, Next.js frontend calling it over HTTP, both repositories public with clear READMEs explaining the contract between them.
+
+**Why this exists**
+FastAPI or Flask Python backends appear in roughly 55% of UK junior AI-product postings (MARKET_CRITERIA.md §A). TypeScript-only server evidence reads as a narrower engineer.
+</details>
+
+- [ ] [Deploy one artefact to a non-Vercel cloud provider and publish a comparison writeup](https://fly.io/docs/) (MKT-03)
+
+<details>
+<summary>More info · MKT-03 · Cloud platform exposure</summary>
+
+**What to do**
+Deploy one artefact — typically the Docker image from MKT-01, or an ML inference endpoint from Phase 3 — to a free-tier cloud provider other than Vercel. Recommended targets: Fly.io (free allowances, no card required), Render free tier, or Oracle Cloud Always Free. AWS Lightsail and GCP Cloud Run are acceptable if the card-on-file constraint is tolerated.
+
+Publish a short writeup comparing the provider's build pipeline, cold-start behaviour, and environment-variable management with Vercel's equivalents.
+
+**What not to worry about**
+- Maintaining the deployment indefinitely. A live demo for 30 days is sufficient evidence; teardown is acceptable thereafter.
+- Building multi-region infrastructure. One region, one service, one writeup.
+
+**What counts as complete**
+One publicly reachable deployment at a non-Vercel provider (or a documented teardown with screenshots and logs). One comparison writeup on the portfolio.
+
+**Why this exists**
+Roughly 85% of UK junior postings name AWS, GCP, or Azure explicitly (MARKET_CRITERIA.md §A). Vercel is a specialised platform; exposure to a second provider signals portability.
+</details>
+
+- [ ] [Work through ByteByteGo system design basics and publish a primer post](https://bytebytego.com/courses/system-design-interview) (MKT-04)
+
+<details>
+<summary>More info · MKT-04 · System design basics</summary>
+
+**What to do**
+Work through the ByteByteGo System Design Interview primer (the free introductory chapters and the public YouTube series), *Grokking the System Design Interview* summaries, and the HighScalability blog's primer posts. Focus on the eight primitives usually tested at junior level: load balancers, caching, CDN, databases (relational vs key-value vs document), message queues, rate limiting, leader-follower replication, and observability basics.
+
+Publish one post on the portfolio walking through the system design of one of the shipped AI applications — AIP-03, AIP-04, or the MKT-02 split-stack app — at a whiteboard level. Diagrams are expected.
+
+**What not to worry about**
+- Learning senior-level system design. The target is "can articulate a junior-appropriate architecture out loud without panicking" — not architecture astronauts.
+- Perfect diagrams. Hand-drawn on paper then photographed is acceptable.
+
+**What counts as complete**
+One primer post on the portfolio walking through the architecture of a shipped app, covering the eight primitives named above. Notes from the ByteByteGo and Grokking sources committed privately or to a notes repository.
+
+**Why this exists**
+JOB-07 (Phase 5) requires mock technical interviews covering "DSA plus system design basics plus AI-product design". Without a prerequisite study artefact, JOB-07 starts from zero — this task lifts the floor before the active hunt begins.
+</details>
+
 - [ ] Commission an external calibration: senior engineer walkthrough and hiring-manager feedback (ACC-03)
 
 <details>
@@ -124,6 +185,25 @@ Working MCP server or consumer, public repository, writeup explaining the protoc
 
 **What to do**
 Ask a senior engineer (the advocate contact or referrals from them) to walk through the portfolio and provide honest feedback. Separately, ask one UK engineering hiring manager to review and share what they would flag in a real application review. Incorporate the feedback.
+</details>
+
+- [ ] Add twenty senior engineers and UK AI hiring managers on LinkedIn (NET-05)
+
+<details>
+<summary>More info · NET-05 · Senior engineers and hiring managers</summary>
+
+**What to do**
+Add approximately twenty connections comprising senior engineers, engineering managers, and heads of AI or engineering at the UK companies on your shortlist for Phase 5. Pre-positions the network ahead of the active job hunt. Use templates 4 and 5 in `content/linkedin-templates.md` ("senior engineer engaged with" and "UK engineering leader at a target company").
+
+**What not to worry about**
+- Requesting anything. This is network *building*, not network *activation*. Asks come later via JOB-06.
+- Reaching every target. The shortlist will exceed twenty; pick the top twenty where there is something specific to reference.
+
+**What counts as complete**
+Twenty personalised connection requests sent. Each references a specific piece of recent public output from the recipient or their company. Outcomes tracked privately. The connections are in place *before* applications start, not during.
+
+**Why this phase**
+Hiring managers and senior engineers respond poorly to cold outreach from applicants who have no prior context with them. Connecting now — four to six months before JOB-06 messages begin — converts cold outreach into warm follow-up on an established thread.
 </details>
 
 - [ ] Publish a LinkedIn phase-completion post summarising Phase 4 output (SOC-03)
