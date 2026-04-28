@@ -5,7 +5,7 @@ window: ""
 status: active
 ---
 
-Establish a foundation in Python, computer science fundamentals, data structures and algorithms, professional Git workflow, and core systems and networking concepts. Each topic is evidenced through working code and technical writeups rather than certificates alone.
+Establish a foundation in Python, computer science fundamentals, data structures and algorithms, professional Git workflow, and core systems and networking concepts. Each topic is evidenced through working code and technical write ups rather than certificates alone.
 
 ## Tasks
 
